@@ -1,17 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Файлы исходного кода">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="API">
+      <UniqueIdentifier>{d43e32c0-6b0e-4bee-9300-ef89472c254a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Заголовочные файлы">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    <Filter Include="Game">
+      <UniqueIdentifier>{c728506d-c7f5-466f-a509-7aecc123fbd1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы ресурсов">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="API\Core">
+      <UniqueIdentifier>{b07dc4b8-51c6-45ab-9185-7415d0690b1c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="API\Graphics">
+      <UniqueIdentifier>{6faac93f-f251-420a-84fe-779f4466c322}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\API\Core\include\BStringUtils.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Core\include\BVariables.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\API\Core\source\BStringUtils.cpp">
+      <Filter>API\Core</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
