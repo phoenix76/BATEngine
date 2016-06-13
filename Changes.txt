@@ -7,3 +7,11 @@ Was write implementation for CBString methods and operators
 TODO: We need to write valid convertation for floating point numbers
 
 --------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------
+14.05.2016 | 02:27:35 was made next changes:
+
+Add BPlatformDependencies.h header file, add some platform macroses
+
+--------------------------------------------------------------------------

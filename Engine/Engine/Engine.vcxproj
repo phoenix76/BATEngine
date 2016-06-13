@@ -79,6 +79,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\source\API\Core\include\BPlatformDependencies.h" />
     <ClInclude Include="..\source\API\Core\include\BStringUtils.h" />
     <ClInclude Include="..\source\API\Core\include\BVariables.h" />
   </ItemGroup>

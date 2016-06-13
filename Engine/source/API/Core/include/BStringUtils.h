@@ -107,6 +107,8 @@ namespace BEngine
 		using std::string::clear;
 		using std::string::erase;
 
+		using std::string::operator[];
+
 	private:
 		std::stringstream m_dataConverter;
 
