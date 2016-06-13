@@ -26,5 +26,8 @@
     <ClCompile Include="..\source\API\Core\source\BStringUtils.cpp">
       <Filter>API\Core</Filter>
     </ClCompile>
+    <ClCompile Include="..\source\main.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

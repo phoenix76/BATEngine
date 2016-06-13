@@ -1,0 +1,9 @@
+
+
+-------------------------------------------------------------------------
+14.05.2016 | 00:31:08 was made next changes:
+
+Was write implementation for CBString methods and operators
+TODO: We need to write valid convertation for floating point numbers
+
+--------------------------------------------------------------------------
