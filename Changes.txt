@@ -1,7 +1,7 @@
 
 
 -------------------------------------------------------------------------
-14.05.2016 | 00:31:08 was made next changes:
+14.05.2016 | 00:31:08 were made the following changes:
 
 Was write implementation for CBString methods and operators
 TODO: We need to write valid convertation for floating point numbers
@@ -10,8 +10,29 @@ TODO: We need to write valid convertation for floating point numbers
 
 
 -------------------------------------------------------------------------
-14.05.2016 | 02:27:35 was made next changes:
+14.05.2016 | 02:27:35 were made the following changes:
 
 Add BPlatformDependencies.h header file, add some platform macroses
 
 --------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------
+14.06.2016 | 19:45:05 were made the following changes:
+
+Added BConfig.h & *.cpp files into API->Core Directory, that may be used
+for working with config.xml - engine configuration file.
+
+Added to the Engine project 3rd party filter with Pugi XML folder, where
+pugi xml related files are located. Pugi XML source will be needed for
+working with XML files - parsing.
+
+Added Pugi XML also in VC++ Directories -> Include Directories
+
+Added x64 solution platform with debug and release modes respectively.
+
+For all configurations C/C++ -> All Options -> Warning Level 4 was also set.
+This will be used for early possible error detection.
+TODO: Consider enabling: Enable All Warning option.
+--------------------------------------------------------------------------
+

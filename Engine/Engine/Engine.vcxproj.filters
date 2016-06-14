@@ -13,6 +13,12 @@
     <Filter Include="API\Graphics">
       <UniqueIdentifier>{6faac93f-f251-420a-84fe-779f4466c322}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rd party">
+      <UniqueIdentifier>{872d0ee1-4726-408d-9f91-ea90b5a36b20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd party\Pugi XML">
+      <UniqueIdentifier>{a9b01ffd-e2f2-4966-bf1c-699f94baa5cc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\API\Core\include\BStringUtils.h">
@@ -24,6 +30,15 @@
     <ClInclude Include="..\source\API\Core\include\BPlatformDependencies.h">
       <Filter>API\Core</Filter>
     </ClInclude>
+    <ClInclude Include="..\source\API\Core\BConfig.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd Party\PugiXML\src\pugiconfig.hpp">
+      <Filter>3rd party\Pugi XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd Party\PugiXML\src\pugixml.hpp">
+      <Filter>3rd party\Pugi XML</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\API\Core\source\BStringUtils.cpp">
@@ -31,6 +46,12 @@
     </ClCompile>
     <ClCompile Include="..\source\main.cpp">
       <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\API\Core\BConfig.cpp">
+      <Filter>API\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd Party\PugiXML\src\pugixml.cpp">
+      <Filter>3rd party\Pugi XML</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

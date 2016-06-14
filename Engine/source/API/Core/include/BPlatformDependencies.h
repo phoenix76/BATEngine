@@ -1,6 +1,7 @@
 /***********************************************************************
-BPLATFORMDEPENDENCIES
+PLATFORM DEPENDENCIES
 
+In this file all platform dependencies are defined.
 
 ***********************************************************************/
 
