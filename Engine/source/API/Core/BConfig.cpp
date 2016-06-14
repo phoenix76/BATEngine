@@ -17,7 +17,8 @@ namespace BEngine
 		}
 		else
 		{
-
+			//
+			exit(0);
 		}
 	}
 } //namespace BEngine
