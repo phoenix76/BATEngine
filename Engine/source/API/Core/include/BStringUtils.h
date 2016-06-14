@@ -107,12 +107,15 @@ namespace BEngine
 		using std::string::length;
 		using std::string::clear;
 		using std::string::erase;
+		using std::string::substr;
 
 		using std::string::operator[];
 
 	private:
-		std::stringstream m_dataConverter;
+		//std::stringstream m_dataConverter;
 
 	};
+
+	typedef CBString BString;
 } //namespace BEngine
 #endif //CBSTRING_H
