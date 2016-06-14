@@ -20,6 +20,7 @@ namespace pugi
 	class xml_document;
 }
 
+// ****** TODO: If failed to initialize add Log Write: failed to load config.xml file.
 namespace BEngine 
 {
 	class CBConfig 
@@ -30,6 +31,9 @@ namespace BEngine
 				static CBConfig cInstance;
 				return cInstance;
 			}
+			bool InitCfg();
+
+			//const SGRaphicsCInfo& getGraphicsConfig() const
 			
 		private:
 			CBConfig();

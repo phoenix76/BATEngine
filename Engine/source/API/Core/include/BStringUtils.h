@@ -36,9 +36,9 @@ namespace BEngine
 		CBString(uint32 in) : std::string(std::to_string(in)) {}
 		CBString(int64 in) : std::string(std::to_string(in)) {}
 		CBString(uint64 in) : std::string(std::to_string(in)) {}
-		CBString(float in);
-		CBString(double in);
-		CBString(long double in);
+// 		CBString(float in);
+// 		CBString(double in);
+// 		CBString(long double in);
 
 		~CBString() {}
 
@@ -56,9 +56,9 @@ namespace BEngine
 		CBString& operator=(uint32 in)				{ (std::string&)*this = std::to_string(in); return *this; }
 		CBString& operator=(int64 in)				{ (std::string&)*this = std::to_string(in); return *this; }
 		CBString& operator=(uint64 in)				{ (std::string&)*this = std::to_string(in); return *this; }
-		CBString& operator=(float in);
-		CBString& operator=(double in);
-		CBString& operator=(long double in);
+// 		CBString& operator=(float in);
+// 		CBString& operator=(double in);
+// 		CBString& operator=(long double in);
 
 		//Add operators
 		CBString& operator+(const CBString& in)		{ (std::string&)*this += (std::string&)in; return *this; }
@@ -74,9 +74,9 @@ namespace BEngine
 		CBString& operator+(uint32 in)				{ (std::string&)*this += (std::string)CBString(in); return *this; }
 		CBString& operator+(int64 in)				{ (std::string&)*this += (std::string)CBString(in); return *this; }
 		CBString& operator+(uint64 in)				{ (std::string&)*this += (std::string)CBString(in); return *this; }
-		CBString& operator+(float in);
-		CBString& operator+(double in);
-		CBString& operator+(long double in);
+// 		CBString& operator+(float in);
+// 		CBString& operator+(double in);
+// 		CBString& operator+(long double in);
 
 		//Equal operators
 		bool operator==(const CBString& in)			{ return (std::string&)*this == (std::string&)in; }
@@ -97,11 +97,12 @@ namespace BEngine
 		uint32 asUInt32()			const { return (uint32)std::stoi((std::string&)*this); }
 		int64 asInt64()				const { return (int64)std::stoll((std::string&)*this); }
 		uint64 asUInt64()			const { return (uint64)std::stoull((std::string&)*this); }
-		float asFloat()				const { return std::stof((std::string&)*this); }
-		double asDbl()				const { return std::stod((std::string&)*this); }
-		long double asLDbl()		const { return std::stold((std::string&)*this); }
+// 		float asFloat()				const { return (float)std::strtof(((std::string&)*this).c_str(), nullptr); }
+// 		double asDbl()				const { return (float)std::strtof(((std::string&)*this).c_str(), nullptr); }
+// 		long double asLDbl()		const { return (float)std::strtof(((std::string&)*this).c_str(), nullptr); }
 
 		//Using the base class's methods
+		using std::string::empty;
 		using std::string::size;
 		using std::string::length;
 		using std::string::clear;

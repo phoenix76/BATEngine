@@ -7,10 +7,9 @@ namespace BEngine
 		std::wstring temp(in);
 		(std::string&)*this = std::string(temp.begin(), temp.end());
 	}
-	CBString::CBString(float in)
+	/*CBString::CBString(float in)
 	{
-		m_dataConverter << in;
-		m_dataConverter >> (std::string&)*this;
+		(std::string&)*this = std::to_string(in);
 	}
 	CBString::CBString(double in)
 	{
@@ -21,7 +20,7 @@ namespace BEngine
 	{
 		m_dataConverter << in;
 		m_dataConverter >> (std::string&)*this;
-	}
+	}*/
 	CBString& CBString::operator=(const wchar_t* in)
 	{
 		std::wstring temp(in);
@@ -34,7 +33,7 @@ namespace BEngine
 		(std::string&)*this += std::string(temp.begin(), temp.end());
 		return *this;
 	}
-	CBString& CBString::operator+(float in)
+	/*CBString& CBString::operator+(float in)
 	{
 		
 		m_dataConverter << in;
@@ -54,7 +53,7 @@ namespace BEngine
 		m_dataConverter << in;
 		(std::string&)*this += m_dataConverter.str();
 		return *this;
-	}
+	}*/
 	std::wstring CBString::asWStr() const
 	{
 		typedef std::codecvt<wchar_t, char, mbstate_t> codec_t;
