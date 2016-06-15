@@ -11,6 +11,7 @@ CBLOGMANAGER
 
 namespace BEngine 
 {
+	// ****** NOTE: Method realization scopes have been generated in BLogger.cpp file.
 	class CBLogManager 
 	{
 		public:
