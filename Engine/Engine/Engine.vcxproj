@@ -151,6 +151,9 @@
     <ClInclude Include="..\..\3rd Party\PugiXML\src\pugiconfig.hpp" />
     <ClInclude Include="..\..\3rd Party\PugiXML\src\pugixml.hpp" />
     <ClInclude Include="..\source\API\Core\BConfig.h" />
+    <ClInclude Include="..\source\API\Core\BContainers.h" />
+    <ClInclude Include="..\source\API\Core\BEngineDefs.h" />
+    <ClInclude Include="..\source\API\Core\include\BLogger.h" />
     <ClInclude Include="..\source\API\Core\include\BPlatformDependencies.h" />
     <ClInclude Include="..\source\API\Core\include\BStringUtils.h" />
     <ClInclude Include="..\source\API\Core\include\BVariables.h" />
@@ -158,6 +161,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\3rd Party\PugiXML\src\pugixml.cpp" />
     <ClCompile Include="..\source\API\Core\BConfig.cpp" />
+    <ClCompile Include="..\source\API\Core\source\BLogger.cpp" />
     <ClCompile Include="..\source\API\Core\source\BStringUtils.cpp" />
     <ClCompile Include="..\source\main.cpp" />
   </ItemGroup>

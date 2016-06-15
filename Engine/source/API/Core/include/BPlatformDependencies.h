@@ -12,7 +12,13 @@ In this file all platform dependencies are defined.
 	#pragma warning(disable : 4996)
 #endif
 
-#ifdef _WIN32
+#if (!defined (_WIN64)) && defined (_DEBUG)
+	#define BAT_WIN_DEBUG_X86
+#elif defined(_WIN64) && (_DEBUG)
+	#define BAT_WIN_DEBUG_X64
+#endif
+
+
 #include <windows.h>
 #define WIN_32_LEAN_AND_MEAN
 

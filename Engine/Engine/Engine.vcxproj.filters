@@ -39,6 +39,15 @@
     <ClInclude Include="..\..\3rd Party\PugiXML\src\pugixml.hpp">
       <Filter>3rd party\Pugi XML</Filter>
     </ClInclude>
+    <ClInclude Include="..\source\API\Core\include\BLogger.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Core\BEngineDefs.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Core\BContainers.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\API\Core\source\BStringUtils.cpp">
@@ -52,6 +61,9 @@
     </ClCompile>
     <ClCompile Include="..\..\3rd Party\PugiXML\src\pugixml.cpp">
       <Filter>3rd party\Pugi XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\API\Core\source\BLogger.cpp">
+      <Filter>API\Core</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

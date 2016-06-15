@@ -97,6 +97,8 @@ namespace BEngine
 			mutable std::mutex m_windowParametersMutex;
 			mutable std::mutex m_enginePathsMutex;
 	};
-	typedef CBConfig BConfig;
 } //namespace BEngine
+
+#define sConfig BEngine::CBConfig::getInstance()
+
 #endif //CBCONFIG_H
