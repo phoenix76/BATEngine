@@ -20,4 +20,18 @@ In this file all platform dependencies are defined.
 
 #endif
 
+//This structure alienation stuff will be needed for aligned structure creation.
+#if defined(__MINGW32__) || defined(__CYGWIN__) || (defined (_MSC_VER) && _MSC_VER < 1300)
+#define B_FORCE_INLINE inline
+#define B_ATTRIBUTE_ALIGNED16(a) a
+#define B_ATTRIBUTE_ALIGNED64(a) a
+#define B_ATTRIBUTE_ALIGNED128(a) a
+#else
+#pragma warning(disable : 4324)
+#define B_FORCE_INLINE __forceinline
+#define B_ATTRIBUTE_ALIGNED16(a) __declspec(align(16)) a
+#define B_ATTRIBUTE_ALIGNED64(a) __declspec(align(64)) a
+#define B_ATTRIBUTE_ALIGNED128(a) __declspec (align(128)) a
+#endif
+
 #endif //BPLATFORMDEPENDENCIES_H

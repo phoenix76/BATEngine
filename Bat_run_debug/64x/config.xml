@@ -1,24 +1,16 @@
-
-
+<?xml version="1.0"?>
+<Descr>Define nodes with capital letter, but attributes with small letter.</Descr>
 <Engine>
-	<WindowParam>
-		<Size fullCreen="false" width="1200" height="800"/>
+	<WindowParam fullCreen="false">
+		<Size width="1200" height="800" />
 	</WindowParam>
-	
 	<Paths>
-		<models path="../../DebugData/Models/"/>
-		<textures path="../../DebugData/Textures/"/>
+		<models path="../../DebugData/Models/" />
+		<textures path="../../DebugData/Textures/" />
 	</Paths>
-	
-	<Graphics>
-		
-	</Graphics>
-	
 </Engine>
 
-
-
-<!--
+<Descr>
 Ideas
 auto graphicsSettings = EngineSettings::getInstance().getGraphicsSettings();
 EngineSettings::getInstance().setGraphicsSettings(SGraphicsSettingsConstrInfo);
@@ -42,30 +34,27 @@ main()
 	setGraphics to the engine ..
 	
 	.
-	Engine* engInstance = &Namespace::Engine::getInstance();
+	Engine* engInstance = &amp;Namespace::Engine::getInstance();
 	
 	RenderInterface* graphics = new OpenGLGraphics();
 	PhysicsWorldInterface* physicsWorld = new BulletPhysicsWorld();
 	
-	engInstance->setGraphics(graphics);
-	engInstance->setPhysicsWorld(physicsWorld);
+	engInstance-&gt;setGraphics(graphics);
+	engInstance-&gt;setPhysicsWorld(physicsWorld);
 	
-	auto result = engInstance->initialise();
+	auto result = engInstance-&gt;initialise();
 	
 	if (result == Engine::STATUS_OK) {
 		while {
-			engInstance->update();
+			engInstance-&gt;update();
 		} (!exit)
 	}
 		
-	engInstance->shutDown();
+	engInstance-&gt;shutDown();
 	
 	
 	//error auido (in shut down method)
-	if(Graphics->IsInit())
-		Graphics->Shutdown();
-	
-	
+	if(Graphics-&gt;IsInit())
+		Graphics-&gt;Shutdown();
 }
--->
-
+</Descr>
