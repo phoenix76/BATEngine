@@ -21,10 +21,10 @@ In this file all platform dependencies are defined.
 
 #include <windows.h>
 #define WIN_32_LEAN_AND_MEAN
-
-#elif defined(...)
-
-#endif
+// #ifdef (...)
+// #elif defined(...)
+// 
+// #endif
 
 //This structure alienation stuff will be needed for aligned structure creation.
 #if defined(__MINGW32__) || defined(__CYGWIN__) || (defined (_MSC_VER) && _MSC_VER < 1300)

@@ -11,10 +11,6 @@
 #include <EASTL/list.h>
 #include <EASTL/map.h>
 
-
-
-
-
 // ****** TODO: Later remove these overriding operators as custom allocators will be made, they are needed for EASTL containers to work.
 void * operator new [](size_t size, const char * pName, int flags, unsigned debugFlags, const char * file, int line)
 {
@@ -35,25 +31,30 @@ void operator delete [](void * ptr, size_t alignment, size_t alignmentOffset, co
 	operator delete[](ptr);
 }
 
-template<class T>
-#ifdef USE_EASTL_VECTOR
-	using bvector = eastl::vector<T>;
-#else
-	using bvector = std::vector<T>;
-#endif //USE_EASTL
 
-template<class T>
-#ifdef USE_EASTL
-	using blist = eastl::list<T>;
-#else
-	using blist = std::list<T>;
-#endif //USE_EASTL
 
-template<class T>
-#ifdef USE_EASTL
-	using bmap = eastl::map<T>;
-#else
-	using bmap = std::map<T>;
-#endif //USE_EASTL
+namespace BEngine {
 
+	template<class T>
+	#ifdef USE_EASTL
+		using bvector = eastl::vector<T>;
+	#else
+		using bvector = std::vector<T>;
+	#endif //USE_EASTL
+
+	template<class T>
+	#ifdef USE_EASTL
+		using blist = eastl::list<T>;
+	#else
+		using blist = std::list<T>;
+	#endif //USE_EASTL
+
+		// ****** TODO: Causes error.
+	// template<class T>
+	// #ifdef USE_EASTL
+	// 	using bmap = eastl::map<T>;
+	// #else
+	// 	using bmap = std::map<T>;
+	// #endif //USE_EASTL
+}
 #endif //BCONTAINERS_H
