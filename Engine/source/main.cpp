@@ -8,6 +8,5 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR lpCmdLine, int nC
 	using BEngine::CBConfig;
 	using BEngine::CBString;
 	
-
 	return 0;
 }
