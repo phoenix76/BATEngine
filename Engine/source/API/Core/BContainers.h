@@ -31,9 +31,9 @@ void operator delete [](void * ptr, size_t alignment, size_t alignmentOffset, co
 	operator delete[](ptr);
 }
 
-
-
 namespace BEngine {
+
+	// ****** NOTE: In file eabase.h line 724 typedef wchar_t  char16_t was commented.
 
 	template<class T>
 	#ifdef USE_EASTL

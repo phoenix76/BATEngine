@@ -5,6 +5,6 @@
 #include "include/BPlatformDependencies.h"
 #include "BContainers.h"
 
-//#define USE_EASTL
+#define USE_EASTL
 
 #endif //BENGINEDEFS_H

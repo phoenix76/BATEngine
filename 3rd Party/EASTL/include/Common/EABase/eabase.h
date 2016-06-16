@@ -721,7 +721,7 @@
 				#define _CHAR16T
 			#endif
 			#if !defined(_HAS_CHAR16_T_LANGUAGE_SUPPORT) || !_HAS_CHAR16_T_LANGUAGE_SUPPORT
-				typedef wchar_t  char16_t;
+				//typedef wchar_t  char16_t;
 				typedef uint32_t char32_t;
 			#endif
 		#else
