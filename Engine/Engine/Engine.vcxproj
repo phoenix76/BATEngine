@@ -71,6 +71,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>..\..\3rd Party\PugiXML\src;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Git\BatEngine\3rd Party\EASTL\lib 86x;$(LibraryPath)</LibraryPath>
+    <OutDir>..\..\Bat_run_debug\86x\</OutDir>
+    <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -170,6 +173,8 @@
     <ClInclude Include="..\source\API\Core\BConfig.h" />
     <ClInclude Include="..\source\API\Core\BContainers.h" />
     <ClInclude Include="..\source\API\Core\BEngineDefs.h" />
+    <ClInclude Include="..\source\API\Core\BThreadUtils.h" />
+    <ClInclude Include="..\source\API\Core\BWinUtils.h" />
     <ClInclude Include="..\source\API\Core\include\BLogger.h" />
     <ClInclude Include="..\source\API\Core\include\BPlatformDependencies.h" />
     <ClInclude Include="..\source\API\Core\include\BStringUtils.h" />
@@ -178,6 +183,8 @@
   <ItemGroup>
     <ClCompile Include="..\..\3rd Party\PugiXML\src\pugixml.cpp" />
     <ClCompile Include="..\source\API\Core\BConfig.cpp" />
+    <ClCompile Include="..\source\API\Core\BContainers.cpp" />
+    <ClCompile Include="..\source\API\Core\BWinUtils.cpp" />
     <ClCompile Include="..\source\API\Core\source\BLogger.cpp" />
     <ClCompile Include="..\source\API\Core\source\BStringUtils.cpp" />
     <ClCompile Include="..\source\main.cpp" />

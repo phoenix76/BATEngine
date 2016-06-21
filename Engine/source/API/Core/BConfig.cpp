@@ -55,7 +55,7 @@ namespace BEngine
 	{
 		std::lock_guard<std::mutex> guard(m_saveConfigMutex);
 		if (m_configurationFile != nullptr) {
-			return m_configurationFile->save_file(&fileName[0]);
+			return m_configurationFile->save_file(fileName);
 		} else {
 			return false;
 		}

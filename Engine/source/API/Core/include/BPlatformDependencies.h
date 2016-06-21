@@ -8,7 +8,9 @@ In this file all platform dependencies are defined.
 #ifndef BPLATFORMDEPENDENCIES_H
 #define BPLATFORMDEPENDENCIES_H
 
-#ifdef _MSC_VER > 1000
+//This macros disable a compiler errors 4996, which occurs when we using C functions something like this - (localtime, strcpy, etc)
+//Alternatively, we can using _CRT_SECURE_NO_WARNINGS are defined.
+#if defined _MSC_VER && (_MSC_VER > 1000)
 	#pragma warning(disable : 4996)
 #endif
 
@@ -25,7 +27,12 @@ In this file all platform dependencies are defined.
 		#define BAT_WIN_DEBUG_X86
 	#elif defined(_WIN64) && (_DEBUG)
 		#define BAT_WIN_DEBUG_X64
+	#elif defined _WIN32
+		#define BAT_WIN_RELEASE_X86
+	#elif defined _WIN64
+		#define BAT_WIN_RELEASE_X64
 	#endif
+
 #endif
 
 // #elif defined(...)

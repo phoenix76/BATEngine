@@ -9,6 +9,8 @@ This file contains the typedefs for basic C++ types
 #ifndef BVARIABLES_H
 #define BVARIABLES_H
 
+#include "BPlatformDependencies.h"
+
 typedef char					int8;
 typedef short					int16;
 typedef int						int32;

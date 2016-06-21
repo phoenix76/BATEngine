@@ -18,101 +18,92 @@ Returns the string's digital representations.
 
 namespace BEngine
 {
-	class CBString : private std::string
+	class CBString
 	{
 	public:
 		//Constructors
-		CBString() : std::string("") {}
+		CBString() : m_str("") {}
 		//Copy ctor not required, generates automatically
-		CBString(const std::string& in) : std::string(in) {}
-		CBString(const std::wstring& in) : std::string(std::string(in.begin(), in.end())) {}
-		CBString(const char* in) : std::string(in) {}
+		CBString(const std::string& in) : m_str(in) {}
+		CBString(const std::wstring& in) : m_str(std::string(in.begin(), in.end())) {}
+		CBString(const char* in) : m_str(in) {}
 		CBString(const wchar_t* in);
-		CBString(int8 in) : std::string(std::to_string(in)) {}
-		CBString(uint8 in) : std::string(std::to_string(in)) {}
-		CBString(int16 in) : std::string(std::to_string(in)) {}
-		CBString(uint16 in) : std::string(std::to_string(in)) {}
-		CBString(int32 in) : std::string(std::to_string(in)) {}
-		CBString(uint32 in) : std::string(std::to_string(in)) {}
-		CBString(int64 in) : std::string(std::to_string(in)) {}
-		CBString(uint64 in) : std::string(std::to_string(in)) {}
-// 		CBString(float in);
-// 		CBString(double in);
-// 		CBString(long double in);
+		CBString(int8 in) : m_str(std::to_string(in)) {}
+		CBString(uint8 in) : m_str(std::to_string(in)) {}
+		CBString(int16 in) : m_str(std::to_string(in)) {}
+		CBString(uint16 in) : m_str(std::to_string(in)) {}
+		CBString(int32 in) : m_str(std::to_string(in)) {}
+		CBString(uint32 in) : m_str(std::to_string(in)) {}
+		CBString(int64 in) : m_str(std::to_string(in)) {}
+		CBString(uint64 in) : m_str(std::to_string(in)) {}
 
 		~CBString() {}
 
 		//Assignment operators
-		CBString& operator=(const CBString& in)		{ (std::string&)*this = (std::string&)in; return *this; }
-		CBString& operator=(const std::string& in)	{ (std::string&)*this = in; return *this; }
-		CBString& operator=(const std::wstring& in)	{ (std::string&)*this = std::string(in.begin(), in.end()); return *this; }
-		CBString& operator=(const char* in)			{ (std::string&)*this = in; return *this; }
+		CBString& operator=(const CBString& in)		{ m_str = in.m_str; return *this; }
+		CBString& operator=(const std::string& in)	{ m_str = in; return *this; }
+		CBString& operator=(const std::wstring& in)	{ m_str = std::string(in.begin(), in.end()); return *this; }
+		CBString& operator=(const char* in)			{ m_str = in; return *this; }
 		CBString& operator=(const wchar_t* in);
-		CBString& operator=(int8 in)				{ (std::string&)*this = std::to_string(in); return *this; }
-		CBString& operator=(uint8 in)				{ (std::string&)*this = std::to_string(in); return *this; }
-		CBString& operator=(int16 in)				{ (std::string&)*this = std::to_string(in); return *this; }
-		CBString& operator=(uint16 in)				{ (std::string&)*this = std::to_string(in); return *this; }
-		CBString& operator=(int32 in)				{ (std::string&)*this = std::to_string(in); return *this; }
-		CBString& operator=(uint32 in)				{ (std::string&)*this = std::to_string(in); return *this; }
-		CBString& operator=(int64 in)				{ (std::string&)*this = std::to_string(in); return *this; }
-		CBString& operator=(uint64 in)				{ (std::string&)*this = std::to_string(in); return *this; }
-// 		CBString& operator=(float in);
-// 		CBString& operator=(double in);
-// 		CBString& operator=(long double in);
+		CBString& operator=(int8 in)				{ m_str = std::to_string(in); return *this; }
+		CBString& operator=(uint8 in)				{ m_str = std::to_string(in); return *this; }
+		CBString& operator=(int16 in)				{ m_str = std::to_string(in); return *this; }
+		CBString& operator=(uint16 in)				{ m_str = std::to_string(in); return *this; }
+		CBString& operator=(int32 in)				{ m_str = std::to_string(in); return *this; }
+		CBString& operator=(uint32 in)				{ m_str = std::to_string(in); return *this; }
+		CBString& operator=(int64 in)				{ m_str = std::to_string(in); return *this; }
+		CBString& operator=(uint64 in)				{ m_str = std::to_string(in); return *this; }
 
 		//Add operators
-		CBString& operator+(const CBString& in)		{ (std::string&)*this += (std::string&)in; return *this; }
-		CBString& operator+(const std::string& in)	{ (std::string&)*this += in; return *this; }
-		CBString& operator+(const std::wstring& in) { (std::string&)*this += std::string(in.begin(), in.end()); return *this; }
-		CBString& operator+(const char* in)			{ (std::string&)*this += in; return *this; }
-		CBString& operator+(const wchar_t* in);
-		CBString& operator+(int8 in)				{ (std::string&)*this += (std::string)CBString(in); return *this; }
-		CBString& operator+(uint8 in)				{ (std::string&)*this += (std::string)CBString(in); return *this; }
-		CBString& operator+(int16 in)				{ (std::string&)*this += (std::string)CBString(in); return *this; }
-		CBString& operator+(uint16 in)				{ (std::string&)*this += (std::string)CBString(in); return *this; }
-		CBString& operator+(int32 in)				{ (std::string&)*this += (std::string)CBString(in); return *this; }
-		CBString& operator+(uint32 in)				{ (std::string&)*this += (std::string)CBString(in); return *this; }
-		CBString& operator+(int64 in)				{ (std::string&)*this += (std::string)CBString(in); return *this; }
-		CBString& operator+(uint64 in)				{ (std::string&)*this += (std::string)CBString(in); return *this; }
-// 		CBString& operator+(float in);
-// 		CBString& operator+(double in);
-// 		CBString& operator+(long double in);
+		CBString operator+(const CBString& in)		const { return CBString(m_str + in.m_str); }
+		CBString operator+(const std::string& in)	const { return CBString(m_str + in); }
+		CBString operator+(const std::wstring& in)	const { return CBString(m_str + std::string(in.begin(), in.end())); }
+		CBString operator+(const char* in)			const { return CBString(m_str + in); }
+		CBString operator+(const wchar_t* in);
+		CBString operator+(int8 in)					const { return CBString(m_str + (char)in); }
+		CBString operator+(uint8 in)				const { return CBString(m_str + std::to_string(in)); }
+		CBString operator+(int16 in)				const { return CBString(m_str + std::to_string(in)); }
+		CBString operator+(uint16 in)				const { return CBString(m_str + std::to_string(in)); }
+		CBString operator+(int32 in)				const { return CBString(m_str + std::to_string(in)); }
+		CBString operator+(uint32 in)				const { return CBString(m_str + std::to_string(in)); }
+		CBString operator+(int64 in)				const { return CBString(m_str + std::to_string(in)); }
+		CBString operator+(uint64 in)				const { return CBString(m_str + std::to_string(in)); }
+
+		CBString& operator+=(const std::string& in) { m_str += in; return *this; }
+		CBString& operator+=(const char* in)		{ m_str += in; return *this; }
+		CBString& operator+=(const char& in)		{ m_str += in; return *this; }
 
 		//Equal operators
-		bool operator==(const CBString& in)			{ return (std::string&)*this == (std::string&)in; }
-		bool operator==(const std::string& in)		{ return ((std::string&)*this == in); }
-		bool operator==(const char* in)				{ return ((std::string&)*this == std::string(in)); }
-		bool operator==(const std::wstring& in)		{ return (this->asWStr() == in); }
-		bool operator==(const wchar_t* in)			{ return (this->asWStr() == std::wstring(in)); }
+		bool operator==(const CBString& in)			const { return m_str == in.m_str; }
+		bool operator==(const std::string& in)		const { return m_str == in; }
+		bool operator==(const char* in)				const { return m_str == in; }
+		bool operator==(const std::wstring& in)		const { return (this->asWStr() == in); }
+		bool operator==(const wchar_t* in)			const { return (this->asWStr() == std::wstring(in)); }
+
+		char operator[](int index) const { return m_str[index]; }
+		char& operator[](int index)		 { return m_str[index]; }
+		
 
 		//Getters
-		std::string asStr()			const { return ((std::string)*this).c_str(); }
-		const char* asCStr()		const { return this->c_str(); }
+		std::string asStr()			const { return m_str; }
+		const char* asCStr()		const { return m_str.c_str(); }
 		std::wstring asWStr()		const;
-		int8 asInt8()				const { return (int8)std::stoi((std::string&)*this); }
-		uint8 asUInt8()				const { return (uint8)std::stoi((std::string&)*this); }
-		int16 asInt16()				const { return (int16)std::stoi((std::string&)*this); }
-		uint16 asUInt16()			const { return (uint16)std::stoi((std::string&)*this); }
-		int32 asInt32()				const { return (int32)std::stoi((std::string&)*this); }
-		uint32 asUInt32()			const { return (uint32)std::stoi((std::string&)*this); }
-		int64 asInt64()				const { return (int64)std::stoll((std::string&)*this); }
-		uint64 asUInt64()			const { return (uint64)std::stoull((std::string&)*this); }
-// 		float asFloat()				const { return (float)std::strtof(((std::string&)*this).c_str(), nullptr); }
-// 		double asDbl()				const { return (float)std::strtof(((std::string&)*this).c_str(), nullptr); }
-// 		long double asLDbl()		const { return (float)std::strtof(((std::string&)*this).c_str(), nullptr); }
+		int8 asInt8()				const { return (int8)std::stoi(m_str); }
+		uint8 asUInt8()				const { return (uint8)std::stoi(m_str); }
+		int16 asInt16()				const { return (int16)std::stoi(m_str); }
+		uint16 asUInt16()			const { return (uint16)std::stoi(m_str); }
+		int32 asInt32()				const { return (int32)std::stoi(m_str); }
+		uint32 asUInt32()			const { return (uint32)std::stoi(m_str); }
+		int64 asInt64()				const { return (int64)std::stoll(m_str); }
+		uint64 asUInt64()			const { return (uint64)std::stoull(m_str); }
 
-		//Using the base class's methods
-		using std::string::empty;
-		using std::string::size;
-		using std::string::length;
-		using std::string::clear;
-		using std::string::erase;
-		using std::string::substr;
+		operator std::string()		const { return m_str; }
+		operator const char*()		const { return m_str.c_str(); }
 
-		using std::string::operator[];
+		explicit operator std::wstring() const { return this->asWStr(); }
 
 	private:
-		//std::stringstream m_dataConverter;
+		std::string m_str;
 
 	};
 

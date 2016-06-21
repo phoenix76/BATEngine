@@ -1,0 +1,23 @@
+NewSraticDrawable
+
+class level
+{
+
+gameobj->update()
+{
+controller->SendMessage(packet);
+}	
+
+
+while(!controller->isempty())
+{
+controller->dispatchmessage();
+}
+
+private:
+msgcontroller* controller;
+videomgr* vmgr;
+audiomgr* amgr;
+
+//includes API's singleton
+}
