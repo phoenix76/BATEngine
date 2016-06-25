@@ -179,7 +179,11 @@
     <ClInclude Include="..\source\API\Core\include\BPlatformDependencies.h" />
     <ClInclude Include="..\source\API\Core\include\BStringUtils.h" />
     <ClInclude Include="..\source\API\Core\include\BVariables.h" />
+<<<<<<< Updated upstream
     <ClInclude Include="Experimental1.h" />
+=======
+    <ClInclude Include="framework.h" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\3rd Party\PugiXML\src\pugixml.cpp" />

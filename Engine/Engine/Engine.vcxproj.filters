@@ -19,6 +19,9 @@
     <Filter Include="3rd party\Pugi XML">
       <UniqueIdentifier>{a9b01ffd-e2f2-4966-bf1c-699f94baa5cc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="API\Framework">
+      <UniqueIdentifier>{b78e5c06-8c1c-4176-b7cf-e2cb30f1712a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\API\Core\include\BStringUtils.h">
@@ -54,8 +57,13 @@
     <ClInclude Include="..\source\API\Core\BThreadUtils.h">
       <Filter>API\Core</Filter>
     </ClInclude>
+<<<<<<< Updated upstream
     <ClInclude Include="Experimental1.h">
       <Filter>API\Core</Filter>
+=======
+    <ClInclude Include="framework.h">
+      <Filter>API\Framework</Filter>
+>>>>>>> Stashed changes
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
