@@ -54,6 +54,9 @@
     <ClInclude Include="..\source\API\Core\BThreadUtils.h">
       <Filter>API\Core</Filter>
     </ClInclude>
+    <ClInclude Include="Experimental1.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\API\Core\source\BStringUtils.cpp">
