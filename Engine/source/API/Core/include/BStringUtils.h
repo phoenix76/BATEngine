@@ -20,6 +20,9 @@ namespace BEngine
 {
 	class CBString
 	{
+	private:
+		std::string m_str;
+
 	public:
 		//Constructors
 		CBString() : m_str("") {}
@@ -97,13 +100,16 @@ namespace BEngine
 		int64 asInt64()				const { return (int64)std::stoll(m_str); }
 		uint64 asUInt64()			const { return (uint64)std::stoull(m_str); }
 
+		auto begin() -> decltype(m_str.begin()) { return m_str.begin(); }
+		auto end() -> decltype(m_str.end()) { return m_str.end(); }
+
+		void clear() { m_str.clear(); }
+
+
 		operator std::string()		const { return m_str; }
 		operator const char*()		const { return m_str.c_str(); }
 
 		explicit operator std::wstring() const { return this->asWStr(); }
-
-	private:
-		std::string m_str;
 
 	};
 
