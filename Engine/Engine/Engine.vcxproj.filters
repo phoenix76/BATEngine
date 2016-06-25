@@ -57,13 +57,11 @@
     <ClInclude Include="..\source\API\Core\BThreadUtils.h">
       <Filter>API\Core</Filter>
     </ClInclude>
-<<<<<<< Updated upstream
     <ClInclude Include="Experimental1.h">
       <Filter>API\Core</Filter>
-=======
+	</ClInclude>
     <ClInclude Include="framework.h">
       <Filter>API\Framework</Filter>
->>>>>>> Stashed changes
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
