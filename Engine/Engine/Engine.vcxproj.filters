@@ -61,6 +61,7 @@
       <Filter>API\Framework</Filter>
     </ClInclude>
     <ClInclude Include="ExperimentalNew2.h" />
+    <ClInclude Include="ExperimentalAnotherX.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\API\Core\source\BStringUtils.cpp">

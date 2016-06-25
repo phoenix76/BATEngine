@@ -179,6 +179,7 @@
     <ClInclude Include="..\source\API\Core\include\BPlatformDependencies.h" />
     <ClInclude Include="..\source\API\Core\include\BStringUtils.h" />
     <ClInclude Include="..\source\API\Core\include\BVariables.h" />
+    <ClInclude Include="ExperimentalAnotherX.h" />
     <ClInclude Include="ExperimentalNew2.h" />
     <ClInclude Include="framework.h" />
   </ItemGroup>
