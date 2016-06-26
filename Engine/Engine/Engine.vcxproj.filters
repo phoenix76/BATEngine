@@ -28,6 +28,9 @@
     <Filter Include="ExperimentalFilterX">
       <UniqueIdentifier>{21ced763-1de0-4c9c-a7ac-2f991e9d7d3f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ExperimentalNew">
+      <UniqueIdentifier>{04cdbd07-91fb-43ef-b664-40af97de654f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\API\Core\include\BStringUtils.h">
@@ -71,6 +74,10 @@
     </ClInclude>
     <ClInclude Include="ExperimentalHeaderX.h">
       <Filter>ExperimentalFilterX</Filter>
+    </ClInclude>
+    <ClInclude Include="audio.h" />
+    <ClInclude Include="ExpNewTestX.h">
+      <Filter>ExperimentalNew</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
