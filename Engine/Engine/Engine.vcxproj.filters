@@ -28,8 +28,13 @@
     <Filter Include="ExperimentalFilterX">
       <UniqueIdentifier>{21ced763-1de0-4c9c-a7ac-2f991e9d7d3f}</UniqueIdentifier>
     </Filter>
+<<<<<<< 7f675302db9a4f14b1e503fe6f4ae2777fd363d3
     <Filter Include="ExperimentalNew">
       <UniqueIdentifier>{04cdbd07-91fb-43ef-b664-40af97de654f}</UniqueIdentifier>
+=======
+    <Filter Include="API\test">
+      <UniqueIdentifier>{509d081c-c155-4f9c-a25f-25eae4ad3699}</UniqueIdentifier>
+>>>>>>> test
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -76,8 +81,13 @@
       <Filter>ExperimentalFilterX</Filter>
     </ClInclude>
     <ClInclude Include="audio.h" />
+<<<<<<< 7f675302db9a4f14b1e503fe6f4ae2777fd363d3
     <ClInclude Include="ExpNewTestX.h">
       <Filter>ExperimentalNew</Filter>
+=======
+    <ClInclude Include="test.h">
+      <Filter>API\test</Filter>
+>>>>>>> test
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
