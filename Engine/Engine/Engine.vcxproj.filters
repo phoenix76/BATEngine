@@ -22,6 +22,9 @@
     <Filter Include="API\Framework">
       <UniqueIdentifier>{b78e5c06-8c1c-4176-b7cf-e2cb30f1712a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ExperimentalFilter">
+      <UniqueIdentifier>{99bbf978-583d-48d8-9b6d-f9c288bc5561}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\API\Core\include\BStringUtils.h">
@@ -59,6 +62,9 @@
     </ClInclude>
     <ClInclude Include="..\source\API\Core\BMasterSystem.h">
       <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Experimental1.h">
+      <Filter>ExperimentalFilter</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
