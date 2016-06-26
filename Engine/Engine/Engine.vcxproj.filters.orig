@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="API">
+      <UniqueIdentifier>{d43e32c0-6b0e-4bee-9300-ef89472c254a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{c728506d-c7f5-466f-a509-7aecc123fbd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API\Core">
+      <UniqueIdentifier>{b07dc4b8-51c6-45ab-9185-7415d0690b1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API\Graphics">
+      <UniqueIdentifier>{6faac93f-f251-420a-84fe-779f4466c322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd party">
+      <UniqueIdentifier>{872d0ee1-4726-408d-9f91-ea90b5a36b20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd party\Pugi XML">
+      <UniqueIdentifier>{a9b01ffd-e2f2-4966-bf1c-699f94baa5cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API\Framework">
+      <UniqueIdentifier>{b78e5c06-8c1c-4176-b7cf-e2cb30f1712a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExperimentalFilter">
+      <UniqueIdentifier>{99bbf978-583d-48d8-9b6d-f9c288bc5561}</UniqueIdentifier>
+    </Filter>
+<<<<<<< 1dd733dd48067438f8556efcd8ae15965de5a6b7
+    <Filter Include="ExperimentalFilterX">
+      <UniqueIdentifier>{21ced763-1de0-4c9c-a7ac-2f991e9d7d3f}</UniqueIdentifier>
+=======
+    <Filter Include="API\audio">
+      <UniqueIdentifier>{b1b159a9-a2be-470b-91ea-30f5033d3b74}</UniqueIdentifier>
+>>>>>>> test
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\API\Core\include\BStringUtils.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Core\include\BVariables.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Core\include\BPlatformDependencies.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Core\BConfig.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd Party\PugiXML\src\pugiconfig.hpp">
+      <Filter>3rd party\Pugi XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd Party\PugiXML\src\pugixml.hpp">
+      <Filter>3rd party\Pugi XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Core\include\BLogger.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Core\BEngineDefs.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Core\BContainers.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Core\BWinUtils.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Core\BThreadUtils.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Core\BMasterSystem.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Experimental1.h">
+      <Filter>ExperimentalFilter</Filter>
+    </ClInclude>
+<<<<<<< 1dd733dd48067438f8556efcd8ae15965de5a6b7
+    <ClInclude Include="ExperimentalHeaderX.h">
+      <Filter>ExperimentalFilterX</Filter>
+=======
+    <ClInclude Include="audio.h">
+      <Filter>API\audio</Filter>
+>>>>>>> test
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\API\Core\source\BStringUtils.cpp">
+      <Filter>API\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\main.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\API\Core\BConfig.cpp">
+      <Filter>API\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd Party\PugiXML\src\pugixml.cpp">
+      <Filter>3rd party\Pugi XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\API\Core\source\BLogger.cpp">
+      <Filter>API\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\API\Core\BWinUtils.cpp">
+      <Filter>API\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\API\Core\BContainers.cpp">
+      <Filter>API\Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
