@@ -25,6 +25,9 @@
     <Filter Include="ExperimentalFilter">
       <UniqueIdentifier>{99bbf978-583d-48d8-9b6d-f9c288bc5561}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ExperimentalFilterX">
+      <UniqueIdentifier>{21ced763-1de0-4c9c-a7ac-2f991e9d7d3f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\API\Core\include\BStringUtils.h">
@@ -65,6 +68,9 @@
     </ClInclude>
     <ClInclude Include="Experimental1.h">
       <Filter>ExperimentalFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="ExperimentalHeaderX.h">
+      <Filter>ExperimentalFilterX</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
