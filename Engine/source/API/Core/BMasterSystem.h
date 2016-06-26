@@ -1,40 +1,23 @@
 /***********************************************************************
-DFE
+BCMSYSTEM
 
 
 ***********************************************************************/
 
-#ifndef DFE_H
-#define DFE_H
+#ifndef BCMSYSTEM_H
+#define BCMSYSTEM_H
 
 namespace BEngine 
 {
-	class dfe 
+	class BCMSystem 
 	{
 		public:
-			dfe();
-			~dfe();
+			BCMSystem();
+			~BCMSystem();
 			
-		protected:
-		
 		private:
-		
+
 	};
 } //namespace BEngine
-#endif //DFE_H
 
-#include "stdafx.h"
-#include "dfe.h"
-
-namespace BEngine 
-{
-	dfe::dfe() 
-	{
-	
-	}
-	
-	dfe::~dfe() 
-	{
-	
-	}
-} //namespace BEngine
+#endif //BCMSYSTEM_H

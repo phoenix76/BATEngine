@@ -173,13 +173,13 @@
     <ClInclude Include="..\source\API\Core\BConfig.h" />
     <ClInclude Include="..\source\API\Core\BContainers.h" />
     <ClInclude Include="..\source\API\Core\BEngineDefs.h" />
+    <ClInclude Include="..\source\API\Core\BMasterSystem.h" />
     <ClInclude Include="..\source\API\Core\BThreadUtils.h" />
     <ClInclude Include="..\source\API\Core\BWinUtils.h" />
     <ClInclude Include="..\source\API\Core\include\BLogger.h" />
     <ClInclude Include="..\source\API\Core\include\BPlatformDependencies.h" />
     <ClInclude Include="..\source\API\Core\include\BStringUtils.h" />
     <ClInclude Include="..\source\API\Core\include\BVariables.h" />
-    <ClInclude Include="framework.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\3rd Party\PugiXML\src\pugixml.cpp" />
