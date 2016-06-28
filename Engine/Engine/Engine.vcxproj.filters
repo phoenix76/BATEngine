@@ -22,15 +22,6 @@
     <Filter Include="API\Framework">
       <UniqueIdentifier>{b78e5c06-8c1c-4176-b7cf-e2cb30f1712a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ExperimentalFilter">
-      <UniqueIdentifier>{99bbf978-583d-48d8-9b6d-f9c288bc5561}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ExperimentalFilterX">
-      <UniqueIdentifier>{21ced763-1de0-4c9c-a7ac-2f991e9d7d3f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ExperimentalNew">
-      <UniqueIdentifier>{04cdbd07-91fb-43ef-b664-40af97de654f}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\API\Core\include\BStringUtils.h">
@@ -68,16 +59,6 @@
     </ClInclude>
     <ClInclude Include="..\source\API\Core\BMasterSystem.h">
       <Filter>API\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="Experimental1.h">
-      <Filter>ExperimentalFilter</Filter>
-    </ClInclude>
-    <ClInclude Include="ExperimentalHeaderX.h">
-      <Filter>ExperimentalFilterX</Filter>
-    </ClInclude>
-    <ClInclude Include="audio.h" />
-    <ClInclude Include="ExpNewTestX.h">
-      <Filter>ExperimentalNew</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
