@@ -22,6 +22,9 @@
     <Filter Include="API\Framework">
       <UniqueIdentifier>{b78e5c06-8c1c-4176-b7cf-e2cb30f1712a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="API\Physics">
+      <UniqueIdentifier>{98d9a8bc-8466-4f06-a2cf-c09f38052e3e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\API\Core\include\BStringUtils.h">
@@ -80,6 +83,9 @@
     </ClInclude>
     <ClInclude Include="..\source\API\Window\BIOTypes.h">
       <Filter>API\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Physics\PhysicsDefinitions.h">
+      <Filter>API\Physics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
