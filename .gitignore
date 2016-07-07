@@ -4,8 +4,6 @@
 # User-specific files
 *.exe
 *.decx
-Engine.vcxproj
-Engine.vcxproj.filters
 *.bat
 *.suo
 *.lib
@@ -28,6 +26,9 @@ build/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
+*.decx
+*.vcxproj
+*.vcxproj.filters
 *_i.c
 *_p.c
 *.ilk
