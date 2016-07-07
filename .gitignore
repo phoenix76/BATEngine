@@ -6,6 +6,7 @@
 *.decx
 Engine.vcxproj
 Engine.vcxproj.filters
+*.bat
 *.suo
 *.lib
 *.user
