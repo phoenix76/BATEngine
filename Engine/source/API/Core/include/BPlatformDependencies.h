@@ -8,7 +8,7 @@ In this file all platform dependencies are defined.
 #ifndef BPLATFORMDEPENDENCIES_H
 #define BPLATFORMDEPENDENCIES_H
 
-//This macros disable a compiler errors 4996, which occurs when we using C functions something like this - (localtime, strcpy, etc)
+//This macros disable a compiler errors 4996, which occurs when we use C functions something like this - (localtime, strcpy, etc)
 //Alternatively, we can using _CRT_SECURE_NO_WARNINGS are defined.
 #if defined _MSC_VER && (_MSC_VER > 1000)
 	#pragma warning(disable : 4996)

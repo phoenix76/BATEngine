@@ -3,6 +3,9 @@
 
 # User-specific files
 *.exe
+*.decx
+*.vcxproj
+*.vcxproj.filters
 *.suo
 *.lib
 *.user

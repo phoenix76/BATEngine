@@ -60,6 +60,27 @@
     <ClInclude Include="..\source\API\Core\BMasterSystem.h">
       <Filter>API\Core</Filter>
     </ClInclude>
+    <ClInclude Include="..\source\API\Core\BBaseManager.h">
+      <Filter>API\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Window\BBaseWindow.h">
+      <Filter>API\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Window\BBaseInput.h">
+      <Filter>API\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Window\BWindowManager.h">
+      <Filter>API\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Window\BWindowsInput.h">
+      <Filter>API\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Window\BWindowsWindow.h">
+      <Filter>API\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\API\Window\BIOTypes.h">
+      <Filter>API\Framework</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\API\Core\source\BStringUtils.cpp">
@@ -82,6 +103,12 @@
     </ClCompile>
     <ClCompile Include="..\source\API\Core\BContainers.cpp">
       <Filter>API\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\API\Window\BWindowsWindow.cpp">
+      <Filter>API\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\API\Window\BWindowManager.cpp">
+      <Filter>API\Framework</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

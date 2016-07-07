@@ -170,6 +170,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\3rd Party\PugiXML\src\pugiconfig.hpp" />
     <ClInclude Include="..\..\3rd Party\PugiXML\src\pugixml.hpp" />
+    <ClInclude Include="..\source\API\Core\BBaseManager.h" />
     <ClInclude Include="..\source\API\Core\BConfig.h" />
     <ClInclude Include="..\source\API\Core\BContainers.h" />
     <ClInclude Include="..\source\API\Core\BEngineDefs.h" />
@@ -180,6 +181,12 @@
     <ClInclude Include="..\source\API\Core\include\BPlatformDependencies.h" />
     <ClInclude Include="..\source\API\Core\include\BStringUtils.h" />
     <ClInclude Include="..\source\API\Core\include\BVariables.h" />
+    <ClInclude Include="..\source\API\Window\BBaseInput.h" />
+    <ClInclude Include="..\source\API\Window\BBaseWindow.h" />
+    <ClInclude Include="..\source\API\Window\BIOTypes.h" />
+    <ClInclude Include="..\source\API\Window\BWindowManager.h" />
+    <ClInclude Include="..\source\API\Window\BWindowsInput.h" />
+    <ClInclude Include="..\source\API\Window\BWindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\3rd Party\PugiXML\src\pugixml.cpp" />
@@ -188,6 +195,8 @@
     <ClCompile Include="..\source\API\Core\BWinUtils.cpp" />
     <ClCompile Include="..\source\API\Core\source\BLogger.cpp" />
     <ClCompile Include="..\source\API\Core\source\BStringUtils.cpp" />
+    <ClCompile Include="..\source\API\Window\BWindowManager.cpp" />
+    <ClCompile Include="..\source\API\Window\BWindowsWindow.cpp" />
     <ClCompile Include="..\source\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

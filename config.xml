@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Descr>Define nodes with capital letter, but attributes with small letter.</Descr>
 <Engine>
-	<WindowParam fullCreen="false">
+	<WindowParam fullScreen="false">
 		<Size width="1200" height="800" />
 	</WindowParam>
 	<Paths>

@@ -1,19 +1,21 @@
 /***********************************************************************
-EXPCLHX
+BWINDOWSINPUT
 
 
 ***********************************************************************/
 
-#ifndef EXPCLHX_H
-#define EXPCLHX_H
+#ifndef BWINDOWSINPUT_H
+#define BWINDOWSINPUT_H
+
+#include "BBaseInput.h"
 
 namespace BEngine 
 {
-	class ExpCLHX
+	class CWindowsInput : public CIBaseInputSystem
 	{
-	public:
-		ExpCLHX() {}
-		~ExpCLHX() {}
+		public:
+			CWindowsInput() {}
+			~CWindowsInput() {}
 			
 		protected:
 		
@@ -21,4 +23,5 @@ namespace BEngine
 		
 	};
 } //namespace BEngine
-#endif //EXPCLHX_H
+
+#endif //BWINDOWSINPUT_H
