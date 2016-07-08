@@ -20,21 +20,9 @@ namespace BEngine
 		uint32 clientHeigth;
 	};
 
-	struct SKeyEvent
-	{
-
-	};
-
-	enum class EElementState
-	{
-		INPUT_EVENT_STATE_UP,
-		INPUT_EVENT_STATE_DOWN
-	};
-	typedef EElementState EKeyEventType, EMouseEventState;
-
-
 	enum class EKeyId
 	{
+		KEY_Null,
 		KEY_Escape = 1,
 		KEY_1,
 		KEY_2,
@@ -145,6 +133,65 @@ namespace BEngine
 		KEY_RWin,
 		KEY_Apps,
 		KEY_OEM_102,
+	};
+
+	enum class EMouseButton
+	{
+
+	};
+
+	enum class EEventState
+	{
+		INPUT_EVENT_TYPE_PRESS,
+		INPUT_EVENT_TYPE_RELEASE
+	};
+	typedef EEventState EKeyEventType, EMouseEventType;
+
+	enum class EKeyState
+	{
+		KEY_STATE_PRESSED,
+		KEY_STATE_RELEASED
+	};
+
+	enum class EMouseState
+	{
+		MOUSE_STATE_PRESSED,
+		MOUSE_STATE_RELEASED
+	};
+
+	struct SKeyEvent
+	{
+		SKeyEvent() {}
+		SKeyEvent(EKeyId iid, EKeyEventType evType) : id(iid), eventType(evType) {}
+		EKeyId id;
+		EKeyEventType eventType;
+	};
+
+	struct SKeyContainer
+	{
+		SKeyContainer() {}
+		SKeyContainer(EKeyId iid, EKeyState keyState) : id(iid), state(keyState) {}
+		EKeyId id;
+		EKeyState state;
+		bool operator==(const SKeyEvent& ev) { if((int)state == (int)ev.eventType) return true; else return false; }
+		SKeyContainer& operator=(const SKeyEvent& ev)
+		{
+			if(ev.eventType == EKeyEventType::INPUT_EVENT_TYPE_PRESS) state = EKeyState::KEY_STATE_PRESSED;
+			else if(ev.eventType == EKeyEventType::INPUT_EVENT_TYPE_RELEASE) state = EKeyState::KEY_STATE_RELEASED;
+			return *this;
+		}
+	};
+
+	struct SMouseButtonContainer
+	{
+		EMouseButton id;
+		EMouseState state;
+	};
+
+	struct SMouseButtonEvent
+	{
+		EMouseButton id;
+		EMouseEventType eventType;
 	};
 
 } //namespace BEngine

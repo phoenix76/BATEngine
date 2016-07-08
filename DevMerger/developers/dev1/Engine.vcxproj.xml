@@ -192,6 +192,7 @@
     <ClCompile Include="..\source\API\Core\source\BLogger.cpp" />
     <ClCompile Include="..\source\API\Core\source\BStringUtils.cpp" />
     <ClCompile Include="..\source\API\Window\BWindowManager.cpp" />
+    <ClCompile Include="..\source\API\Window\BWindowsInput.cpp" />
     <ClCompile Include="..\source\API\Window\BWindowsWindow.cpp" />
     <ClCompile Include="..\source\main.cpp" />
   </ItemGroup>

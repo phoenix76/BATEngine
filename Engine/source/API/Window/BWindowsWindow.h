@@ -9,6 +9,7 @@ BWINDOWSWINDOW
 
 #include "BBaseWindow.h"
 #include "../Core/BWinUtils.h"
+#include "BWindowsInput.h"
 #include "BIOTypes.h"
 
 #include <windows.h>
@@ -18,7 +19,6 @@ BWINDOWSWINDOW
 namespace BEngine 
 {
 	struct SWindowParameters;
-	class CWindowsInput;
 	class CWindowSystemInfo;
 	class CWindowsWindow;
 

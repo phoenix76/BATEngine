@@ -116,5 +116,8 @@
     <ClCompile Include="..\source\API\Window\BWindowManager.cpp">
       <Filter>API\Framework</Filter>
     </ClCompile>
+    <ClCompile Include="..\source\API\Window\BWindowsInput.cpp">
+      <Filter>API\Framework</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

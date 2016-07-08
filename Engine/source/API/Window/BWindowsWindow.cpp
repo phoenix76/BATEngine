@@ -44,7 +44,9 @@ namespace BEngine
 
 	LRESULT CALLBACK CWindowsWindow::MessageHandler(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	{
-		HDC hdc;
+		static SKeyEvent keyEvent;
+		static SMouseButtonEvent mouseEvent;
+		static short scancode;
 
 		switch(msg)
 		{
@@ -63,27 +65,14 @@ namespace BEngine
 					m_windowIsRun = false;
 			}
 			
-			if(HIWORD(GetAsyncKeyState(75)))
-				MessageBox(NULL, L"MSG", L"MSG", MB_OK);
+			uint8 scancode;
 
-			WORD n2Size;
-			TCHAR keyBuf[80];
-			uint32 code;
-			code = HIWORD(lParam);
-			hdc = GetDC(hwnd);
-			code = MapVirtualKey(wParam, MAPVK_VK_TO_VSC);
-			n2Size = wsprintf(keyBuf, TEXT("(%d)"), code);
-			TextOutA(hdc, 20, 40, (std::to_string(code).c_str()), n2Size);
-			ReleaseDC(hwnd, hdc);
-			sLog.alwaysLog("K");
 			return 0;
 
 		case WM_KEYUP:
-			sLog.alwaysLog("up");
 			return 0;
 
 		case WM_LBUTTONDOWN:
-			sLog.alwaysLog((std::to_string(lParam).c_str()));
 			return 0;
 
 		case WM_SETCURSOR:
@@ -91,14 +80,8 @@ namespace BEngine
 			return 0;
 
 		case WM_MOUSEMOVE:
-			WORD nSize;
-			TCHAR szBuf[80];
 			m_cursorPos.x = LOWORD(lParam);
 			m_cursorPos.y = HIWORD(lParam);
-			hdc = GetDC(hwnd);
-			nSize = wsprintf(szBuf, TEXT("(%d, %d)"), m_cursorPos.x, m_cursorPos.y);
-			TextOut(hdc, 20, 20, szBuf, nSize);
-			ReleaseDC(hwnd, hdc);
 			return 0;
 
 		default:

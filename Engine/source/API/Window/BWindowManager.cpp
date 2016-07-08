@@ -13,6 +13,7 @@ namespace BEngine
 #ifdef BAT_WINDOWS
 
 		m_pInputSystem = new CWindowsInput();
+		m_pInputSystem->initialize();
 		m_pWindow = new CWindowsWindow(dynamic_cast<CWindowsInput*>(m_pInputSystem));
 		CWindowsWindow* wnd = dynamic_cast<CWindowsWindow*>(m_pWindow);
 
